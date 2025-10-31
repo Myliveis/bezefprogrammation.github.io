@@ -17,13 +17,13 @@
       color: #fff;
       padding: 40px 20px;
       text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
       position: relative;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.2);
     }
 
     header h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
+      font-size: 34px;
+      margin-bottom: 6px;
     }
 
     header p {
@@ -43,11 +43,40 @@
       text-decoration: none;
       font-size: 14px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: 0.2s;
+    }
+
+    .lang-btn:hover {
+      background: #e0e7ff;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 30px 0;
+      gap: 10px;
+    }
+
+    .menu a {
+      background: #1e40af;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
     }
 
     .content {
       max-width: 900px;
-      margin: 40px auto;
+      margin: 30px auto;
       background: #ffffff;
       border-radius: 14px;
       padding: 30px;
@@ -82,35 +111,31 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
-    .app h3 {
-      color: #1e3a8a;
-      margin-bottom: 8px;
-    }
-
-    .app p {
-      font-size: 14px;
-      color: #334155;
-    }
-
-    .links {
+    .team {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
       margin-top: 30px;
     }
 
-    .links a {
-      display: inline-block;
-      margin: 8px;
-      padding: 12px 22px;
-      background: #1e40af;
-      color: white;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
+    .team img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #1e3a8a;
+      margin-bottom: 10px;
     }
 
-    .links a:hover {
-      background: #2563eb;
+    .team h3 {
+      color: #1e3a8a;
+      margin: 0;
+    }
+
+    .team p {
+      margin: 4px 0;
+      color: #334155;
     }
 
     footer {
@@ -135,7 +160,17 @@
     <p>صناعة تطبيقات الأندرويد التعليمية والحياتية باحتراف وجودة عالية</p>
   </header>
 
-  <div class="content">
+  <!-- أزرار الأقسام -->
+  <div class="menu">
+    <a href="#about">من نحن</a>
+    <a href="#apps">تطبيقاتنا</a>
+    <a href="#team">فريق العمل</a>
+    <a href="privacy-clearbudget.html">سياسة الخصوصية</a>
+    <a href="mailto:madomimo93@gmail.com">تواصل معنا</a>
+  </div>
+
+  <!-- المحتوى -->
+  <div class="content" id="about">
     <h2>من نحن</h2>
     <p>
       نحن في <strong>Bezef Programmation</strong> نؤمن أن التقنية هي لغة المستقبل.  
@@ -144,7 +179,7 @@
       يقود الفريق المطوّر <strong>علي البعريني</strong>، بخبرة في تطوير البرمجيات التعليمية والتطبيقات الذكية.
     </p>
 
-    <h2>تطبيقاتنا</h2>
+    <h2 id="apps">تطبيقاتنا</h2>
     <div class="apps">
       <div class="app">
         <h3>📊 ClearBudget</h3>
@@ -172,9 +207,11 @@
       هدفنا هو تمكين المستخدم العربي من استخدام التكنولوجيا بفاعلية في حياته اليومية والتعليمية.
     </p>
 
-    <div class="links">
-      <a href="privacy-clearbudget.html">🛡 سياسة الخصوصية</a>
-      <a href="mailto:madomimo93@gmail.com">📧 تواصل معنا</a>
+    <div id="team" class="team">
+      <img src="https://avatars.githubusercontent.com/u/1?v=4" alt="Ali Albaarini" />
+      <h3>علي البعريني</h3>
+      <p>المؤسس والمطور الرئيسي</p>
+      <p>📧 madomimo93@gmail.com</p>
     </div>
   </div>
 
