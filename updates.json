@@ -1,9 +1,53 @@
 {
-  "latestVersion": "1.3.0",
-  "importantMessage": "✅ تمت إضافة ميزة النسخ الاحتياطي إلى Google Drive وتحسين سرعة المزامنة.",
-  "news": [
-    "💡 يمكنك الآن تصنيف العملاء حسب العملة المحلية والدولار.",
-    "🧩 تحسين الواجهة وإصلاح بعض الأخطاء.",
-    "📅 تاريخ التحديث: 31 أكتوبر 2025."
-  ]
+  "latestVersion": "1.0.5",
+  "messages": {
+    "ar": {
+      "important": "تحديث هام: تم إضافة لغات جديدة وتحسين الأداء.",
+      "news": [
+        "إضافة اللغة الفرنسية، الإسبانية، البرتغالية، والروسية",
+        "تحسينات في واجهة المستخدم",
+        "إصلاح بعض الأخطاء التقنية"
+      ]
+    },
+    "en": {
+      "important": "Important Update: New languages added and performance improvements.",
+      "news": [
+        "Added French, Spanish, Portuguese, and Russian languages",
+        "UI improvements",
+        "Bug fixes"
+      ]
+    },
+    "fr": {
+      "important": "Mise à jour importante : Nouvelles langues ajoutées.",
+      "news": [
+        "Ajout du français, espagnol, portugais et russe",
+        "Améliorations de l'interface",
+        "Correction de bugs"
+      ]
+    },
+    "es": {
+      "important": "Actualización importante: Nuevos idiomas añadidos.",
+      "news": [
+        "Se agregaron francés, español, portugués y ruso",
+        "Mejoras en la interfaz",
+        "Corrección de errores"
+      ]
+    },
+    "pt": {
+      "important": "Atualização importante: Novos idiomas adicionados.",
+      "news": [
+        "Adicionado francês, espanhol, português e russo",
+        "Melhorias na interface",
+        "Correção de bugs"
+      ]
+    },
+    "ru": {
+      "important": "Важное обновление: Добавлены новые языки.",
+      "news": [
+        "Добавлены французский, испанский, португальский и русский",
+        "Улучшения интерфейса",
+        "Исправление ошибок"
+      ]
+    }
+  }
 }
