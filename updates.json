@@ -1,53 +1,36 @@
 {
-  "latestVersion": "1.0.5",
-  "messages": {
-    "ar": {
-      "important": "تحديث هام: تم إضافة لغات جديدة وتحسين الأداء.",
-      "news": [
-        "إضافة اللغة الفرنسية، الإسبانية، البرتغالية، والروسية",
-        "تحسينات في واجهة المستخدم",
-        "إصلاح بعض الأخطاء التقنية"
-      ]
-    },
-    "en": {
-      "important": "Important Update: New languages added and performance improvements.",
-      "news": [
-        "Added French, Spanish, Portuguese, and Russian languages",
-        "UI improvements",
-        "Bug fixes"
-      ]
-    },
-    "fr": {
-      "important": "Mise à jour importante : Nouvelles langues ajoutées.",
-      "news": [
-        "Ajout du français, espagnol, portugais et russe",
-        "Améliorations de l'interface",
-        "Correction de bugs"
-      ]
-    },
-    "es": {
-      "important": "Actualización importante: Nuevos idiomas añadidos.",
-      "news": [
-        "Se agregaron francés, español, portugués y ruso",
-        "Mejoras en la interfaz",
-        "Corrección de errores"
-      ]
-    },
-    "pt": {
-      "important": "Atualização importante: Novos idiomas adicionados.",
-      "news": [
-        "Adicionado francês, espanhol, português e russo",
-        "Melhorias na interface",
-        "Correção de bugs"
-      ]
-    },
-    "ru": {
-      "important": "Важное обновление: Добавлены новые языки.",
-      "news": [
-        "Добавлены французский, испанский, португальский и русский",
-        "Улучшения интерфейса",
-        "Исправление ошибок"
-      ]
+    "latestVersion": "1.0.1",
+    "messages": {
+        "en": "A critical new version (1.0.1) is available on Google Play! Please update immediately to enjoy all new features and security fixes.",
+        "ar": "يتوفر إصدار جديد وحاسم (1.0.1) على Google Play! يرجى التحديث فوراً للاستمتاع بالميزات الجديدة وإصلاحات الأمان.",
+        "fr": "Une nouvelle version critique (1.0.1) est disponible sur Google Play! Veuillez mettre à jour immédiatement pour profiter des nouvelles fonctionnalités et des correctifs de sécurité.",
+        "de": "Eine kritische neue Version (1.0.1) ist bei Google Play verfügbar! Bitte aktualisieren Sie sofort, um alle neuen Funktionen und Sicherheitskorrekturen zu nutzen.",
+        "it": "Una nuova versione critica (1.0.1) è disponibile su Google Play! Aggiorna immediatamente per usufruire delle nuove funzionalità e delle correzioni di sicurezza.",
+        "es": "¡Una nueva versión crítica (1.0.1) está disponible en Google Play! Actualice de inmediato para disfrutar de todas las nuevas funciones y correcciones de seguridad.",
+        "pt": "Uma nova versão crítica (1.0.1) está disponível no Google Play! Atualize imediatamente para aproveitar todos os novos recursos e correções de segurança.",
+        "tr": "Google Play'de kritik yeni bir sürüm (1.0.1) mevcut! Tüm yeni özelliklerin ve güvenlik düzeltmelerinin keyfini çıkarmak için lütfen hemen güncelleyin.",
+        "el": "Μια κρίσιμη νέα έκδοση (1.0.1) είναι διαθέσιμη στο Google Play! Ενημερώστε αμέσως για να απολαύσετε όλες τις νέες λειτουργίες και τις διορθώσεις ασφαλείας.",
+        "hi": "Google Play पर एक महत्वपूर्ण नया संस्करण (1.0.1) उपलब्ध है! कृपया सभी नई सुविधाओं और सुरक्षा सुधारों का आनंद लेने के लिए तुरंत अपडेट करें।",
+        "zh": "Google Play 上有一个重要的新版本 (1.0.1) 可用！请立即更新，享受所有新功能和安全修复。",
+        "ru": "Критическое новое обновление (1.0.1) доступно в Google Play! Пожалуйста, немедленно обновите, чтобы воспользоваться всеми новыми функциями и исправлениями безопасности.",
+        "in": "Versi baru yang penting (1.0.1) tersedia di Google Play! Harap segera perbarui untuk menikmati semua fitur baru dan perbaikan keamanan.",
+        "ja": "Google Playで重要な新バージョン（1.0.1）が利用可能です！すべての新機能とセキュリティ修正を利用するために、すぐに更新してください。",
+        "ko": "Google Play에서 중요한 새 버전(1.0.1)을 사용할 수 있습니다! 모든 새로운 기능과 보안 수정을 위해 즉시 업데이트하십시오。",
+
+        "news_en": ["New: Added support for 15 languages.", "Fix: Solved Arabic text shaping issue in PDF.", "Improved: Faster data synchronization."],
+        "news_ar": ["جديد: تمت إضافة دعم لـ 15 لغة.", "إصلاح: تم حل مشكلة تقطيع الخط العربي في PDF.", "تحسين: تزامن أسرع للبيانات."],
+        "news_fr": ["Nouveau : Ajout du support pour 15 langues.", "Correction : Problème de mise en forme du texte arabe dans le PDF résolu.", "Amélioration : Synchronisation des données plus rapide."],
+        "news_de": ["Neu: Unterstützung für 15 Sprachen hinzugefügt.", "Behoben: Arabische Textgestaltung im PDF-Problem gelöst.", "Verbessert: Schnellere Datensynchronisierung."],
+        "news_it": ["Novità: Aggiunto supporto per 15 lingue.", "Correzione: Risolto il problema di formattazione del testo arabo nel PDF.", "Migliorato: Sincronizzazione dati più veloce."],
+        "news_es": ["Nuevo: Se añadió soporte para 15 idiomas.", "Corrección: Solucionado el problema de formato de texto árabe en PDF.", "Mejora: Sincronización de datos más rápida."],
+        "news_pt": ["Novo: Adicionado suporte para 15 idiomas.", "Correção: Corrigido o problema de formatação de texto árabe no PDF.", "Melhoria: Sincronização de dados mais rápida."],
+        "news_tr": ["Yeni: 15 dil desteği eklendi.", "Düzeltme: PDF'deki Arapça metin biçimlendirme sorunu çözüldü.", "Geliştirilmiş: Daha hızlı veri senkronizasyonu."],
+        "news_el": ["Νέα: Προστέθηκε υποστήριξη για 15 γλώσσες.", "Διόρθωση: Λύθηκε το πρόβλημα μορφοποίησης αραβικού κειμένου σε PDF.", "Βελτιωμένο: Ταχύτερος συγχρονισμός δεδομένων."],
+        "news_hi": ["नया: 15 भाषाओं के लिए समर्थन जोड़ा गया।", "फिक्स: पीडीएफ में अरबी पाठ आकारण समस्या हल हुई।", "बेहतर: तेज़ डेटा सिंक्रनाइज़ेशन।"],
+        "news_zh": ["新增：增加了对15种语言的支持。", "修复：解决了PDF中阿拉伯文本整形问题。", "改进：更快的数据同步。"],
+        "news_ru": ["Новое: Добавлена поддержка 15 языков.", "Исправлено: Решена проблема форматирования арабского текста в PDF.", "Улучшено: Более быстрая синхронизация данных."],
+        "news_in": ["Baru: Dukungan untuk 15 bahasa ditambahkan.", "Perbaikan: Masalah pembentukan teks Arab di PDF terpecahkan.", "Ditingkatkan: Sinkronisasi data lebih cepat."],
+        "news_ja": ["新規：15言語のサポートが追加されました。", "修正：PDFでのアラビア語テキスト整形の問題を解決しました。", "改善：より高速なデータ同期。"],
+        "news_ko": ["새로운 기능: 15개 언어 지원이 추가되었습니다.", "수정: PDF에서 아랍어 텍스트 셰이핑 문제가 해결되었습니다.", "개선: 더 빠른 데이터 동기화."]
     }
-  }
 }
