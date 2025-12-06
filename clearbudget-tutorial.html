@@ -1,209 +1,243 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ClearBudget – Tutorial & User Guide</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Help Center – ClearBudget</title>
 
-  <style>
+<style>
     body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, sans-serif;
-      background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
-      color: #0f172a;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background:#f2f5f8;
+        margin:0;
+        padding:20px;
+        line-height:1.8;
+        color:#222;
     }
 
-    header {
-      background: linear-gradient(135deg, #1e3a8a, #2563eb);
-      color: #fff;
-      padding: 35px 20px;
-      text-align: center;
-      position: relative;
+    h1 {
+        text-align:center;
+        color:#1e40af;
+        margin-bottom:25px;
     }
 
-    header h1 {
-      font-size: 30px;
-      margin-bottom: 8px;
+    .accordion {
+        background:white;
+        padding:16px;
+        margin-bottom:12px;
+        border-radius:10px;
+        box-shadow:0 2px 6px rgba(0,0,0,0.08);
+        cursor:pointer;
+        font-weight:bold;
+        color:#1e3a8a;
+        transition:0.3s;
     }
 
-    header p {
-      opacity: 0.9;
+    .accordion:hover {
+        background:#eef2ff;
     }
 
-    .lang-btn {
-      position: absolute;
-      right: 20px;
-      top: 20px;
-      background: #fff;
-      color: #1e3a8a;
-      border-radius: 8px;
-      padding: 6px 12px;
-      font-weight: bold;
-      font-size: 14px;
-      text-decoration: none;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: .2s;
-    }
-    .lang-btn:hover { background: #e0e7ff; }
-
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      background: #fff;
-      border-radius: 14px;
-      padding: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      line-height: 1.8;
+    .panel {
+        max-height:0;
+        overflow:hidden;
+        background:white;
+        border-radius:10px;
+        margin-top:-10px;
+        margin-bottom:15px;
+        padding:0 16px;
+        box-shadow:0 2px 6px rgba(0,0,0,0.05);
+        transition:max-height 0.4s ease;
     }
 
-    h2 {
-      color: #1e40af;
-      border-left: 5px solid #1e3a8a;
-      padding-left: 10px;
-      margin-top: 35px;
+    .panel p {
+        padding:14px 0;
+        margin:0;
+        font-size:15px;
+        color:#444;
     }
-
-    .video-box {
-      width: 100%;
-      background: #eef2ff;
-      padding: 20px;
-      border: 1px solid #c7d2fe;
-      border-radius: 12px;
-      margin-bottom: 25px;
-      text-align: center;
-    }
-
-    .video-placeholder {
-      width: 100%;
-      height: 200px;
-      border-radius: 12px;
-      background: #c7d2fe;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #1e3a8a;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #1e3a8a;
-      color: #e2e8f0;
-      font-size: 14px;
-      margin-top: 40px;
-    }
-  </style>
-
-  <!-- 🌍 AUTO LANGUAGE REDIRECT SYSTEM -->
-  <script>
-    const supported = ["en", "ar", "fr", "es", "ru", "tr", "de", "it", "pt", "zh", "ja", "ko", "el", "hi", "id"];
-
-    const userLang = navigator.language.slice(0,2);
-
-    if (supported.includes(userLang) && userLang !== "en") {
-      window.location.href = `clearbudget-tutorial-${userLang}.html`;
-    }
-  </script>
+</style>
 </head>
 
 <body>
 
-  <header>
-    <a href="clearbudget-tutorial-ar.html" class="lang-btn">العربية 🇱🇧</a>
-    <h1>ClearBudget – Official Guide</h1>
-    <p>Learn how to use the app step by step</p>
-  </header>
+<h1>📘 ClearBudget – Help Center</h1>
 
-  <div class="container">
+<!-- 1. PREMIUM -->
+<div class="accordion">⭐ Premium Version</div>
+<div class="panel">
+<p>
+The free version of ClearBudget has a limited number of clients and transactions.  
+You can keep using it by watching ads or earning points.
 
-    <!-- VIDEO SECTION -->
-    <div class="video-box">
-      <h2>📹 Intro Video</h2>
+The <b>Premium version</b> gives you:
+<br>• Unlimited clients, transactions, and invoices – for life  
+• All ads removed  
+• Future exclusive features  
+• Priority support  
 
-      <!-- Placeholder – replace with YouTube later -->
-      <div class="video-placeholder">
-        Video will appear here
-      </div>
+Payment methods:
+<br>• Through Google Play (if you have a Google account and a payment card)  
+• Or by contacting the developer to pay via: Whish, OMT, cryptocurrencies, and more  
+After direct payment, you receive an activation code to enter inside the app.
+</p>
+</div>
 
-      <p>You can add a YouTube video link here when ready.</p>
-    </div>
+<!-- 2. PERSONAL INFO -->
+<div class="accordion">👤 Personal Information Page</div>
+<div class="panel">
+<p>
+This page allows you to personalize your reports and invoices with your name, signature, and company logo.  
+You may edit any information at any time and press (Save).
 
-    <!-- PREMIUM -->
-    <h2>⭐ Premium Version</h2>
-    <p>
-      The free version has limits for clients and transactions.  
-      Premium unlocks lifetime access with no ads.  
-      You can upgrade through Google Play, or contact the developer to get a Premium activation code.
-    </p>
+All your data stays on your device only and is never sent anywhere.  
+You may also leave the fields empty if you do not wish to display any identity on your invoices.
+</p>
+</div>
 
-    <!-- PERSONAL INFO -->
-    <h2>👤 Personal Information</h2>
-    <p>
-      Add your name, phone, and business details to show them on invoices and statements.  
-      You may leave the fields empty if you prefer not to personalize documents.
-    </p>
+<!-- 3. CURRENCY SETTINGS -->
+<div class="accordion">💱 Currency Settings</div>
+<div class="panel">
+<p>
+Select the currency you want to work with inside the app  
+(USD – EUR – GBP – LBP – or your local currency).
 
-    <!-- CURRENCY -->
-    <h2>💱 Currency Settings</h2>
-    <p>
-      Choose your main local currency.  
-      When switching the currency, all “Local” transactions will update automatically.
-    </p>
+When you change the currency, the app automatically converts all previous transactions to the new currency.  
+You may switch anytime, and reports are updated instantly.
+</p>
+</div>
 
-    <!-- BACKUP -->
-    <h2>☁ Backup & Restore</h2>
-    <p>
-      ClearBudget supports:
-      <br>• Automatic daily backup to Google Drive  
-      <br>• Manual Drive backup  
-      <br>• Manual file export/import  
-      ⚠ Restoring a backup will delete current data and replace it.
-    </p>
+<!-- 4. BACKUP -->
+<div class="accordion">☁️ Backup & Restore</div>
+<div class="panel">
+<p>
+ClearBudget provides two backup methods:
 
-    <!-- CLIENTS -->
-    <h2>👥 Clients Page</h2>
-    <p>
-      Press (+) to add a new client.  
-      Long-press a client to edit, delete, or switch between 6 roles  
-      (General / Dollar / Local / Customer / Supplier / etc.).  
-    </p>
+<b>1) Google Drive Backup:</b>  
+• Requires Google Login  
+• Daily automatic backup  
+• Manual (instant) backup  
+• Restore the latest cloud backup with one tap  
 
-    <!-- TRANSACTIONS -->
-    <h2>💵 Transactions</h2>
-    <p>
-      Add payments, receipts, reminders, or notes.  
-      Generate a PDF statement instantly or create invoices & receipts.  
-      All generated documents are saved in the Documents Archive.
-    </p>
+<b>2) Manual Backup (ZIP file):</b>  
+• Export your data anywhere: phone, WhatsApp, email, or any cloud storage  
+• Restore any file you choose  
+⚠️ Note: restoring will delete your current data and replace it with the selected backup.
+</p>
+</div>
 
-    <!-- REPORTS -->
-    <h2>📊 Reports</h2>
-    <p>
-      View Top Debtors, Cash Flow, Best Clients, and Debt Aging charts.  
-      Switch between USD and Local currency anytime.
-    </p>
+<!-- 5. CLIENTS PAGE -->
+<div class="accordion">👥 Clients Page</div>
+<div class="panel">
+<p>
+Tap (+) to add a new client.  
+You may add a name and phone number — the number is optional but useful for calling or sending messages.
 
-    <!-- CATEGORIES -->
-    <h2>🏷 Categories</h2>
-    <p>
-      See grouped client statistics with totals for each category.  
-      Tap any category to see all clients and their balances.
-    </p>
+Long-press on a client to edit, delete, or change their type among:
+<br>• General – General (Local)  
+• Client (USD) – Client (Local)  
+• Supplier (USD) – Supplier (Local)  
 
-    <!-- REMINDERS -->
-    <h2>🔔 Reminders</h2>
-    <p>
-      Create reminders to follow up with clients.  
-      You can call or WhatsApp them directly from the reminder card.
-    </p>
+Each client’s balance is calculated automatically from their transactions.
+</p>
+</div>
 
-  </div>
+<!-- 6. TRANSACTIONS PAGE -->
+<div class="accordion">💼 Transactions Page</div>
+<div class="panel">
+<p>
+Record any operation here: payment, receipt, debt, purchase, or sale.
 
-  <footer>
-    © 2025 ClearBudget – Bezef Programmation
-  </footer>
+Extra features:
+<br>• PDF button to generate a ready account statement for WhatsApp sharing  
+• Invoice button to create an invoice or payment receipt  
+• All generated documents are automatically saved in the Documents Archive page  
+</p>
+</div>
+
+<!-- 7. CATEGORIES -->
+<div class="accordion">📂 Categories</div>
+<div class="panel">
+<p>
+View detailed statistics by type of client:  
+Clients – Suppliers – General – Local – USD.
+
+You can see:
+• Amounts you are owed  
+• Amounts you owe  
+• Based on the selected currency (USD – Local)  
+</p>
+</div>
+
+<!-- 8. REPORTS -->
+<div class="accordion">📊 Reports</div>
+<div class="panel">
+<p>
+A powerful page for analyzing your business:
+
+• Top debtors  
+• Best clients  
+• Aging of debts (old – recent)  
+• Cash flow for every month  
+
+You may easily switch currencies and browse monthly data instantly.
+</p>
+</div>
+
+<!-- 9. DOCUMENTS -->
+<div class="accordion">🧾 Documents & Invoices</div>
+<div class="panel">
+<p>
+This page contains all documents you created:
+• Invoices  
+• Payment receipts  
+• PDF account statements  
+
+You can reopen any document, share it, or delete it.
+</p>
+</div>
+
+<!-- 10. REMINDERS -->
+<div class="accordion">⏰ Reminders</div>
+<div class="panel">
+<p>
+Create reminders linked to any client:
+
+• Payment reminders  
+• Follow-up notes  
+• Due dates  
+• Client-specific comments  
+
+You can call or send WhatsApp messages directly from the reminder card.
+</p>
+</div>
+
+<!-- 11. SECURITY -->
+<div class="accordion">🔒 Security</div>
+<div class="panel">
+<p>
+Protect your data by enabling PIN lock or fingerprint.
+
+Extra options:
+<br>• Change your PIN  
+• Regain access via fingerprint or smart recovery  
+• Emergency recovery code  
+</p>
+</div>
+
+<script>
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].onclick = function () {
+            this.classList.toggle("active");
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        };
+    }
+</script>
 
 </body>
 </html>
