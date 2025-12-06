@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClearBudget – Tutorial & User Guide</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+      color: #0f172a;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: #fff;
+      padding: 35px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      opacity: 0.9;
+    }
+
+    .lang-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background: #fff;
+      color: #1e3a8a;
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: .2s;
+    }
+    .lang-btn:hover { background: #e0e7ff; }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      border-radius: 14px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+
+    h2 {
+      color: #1e40af;
+      border-left: 5px solid #1e3a8a;
+      padding-left: 10px;
+      margin-top: 35px;
+    }
+
+    .video-box {
+      width: 100%;
+      background: #eef2ff;
+      padding: 20px;
+      border: 1px solid #c7d2fe;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .video-placeholder {
+      width: 100%;
+      height: 200px;
+      border-radius: 12px;
+      background: #c7d2fe;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1e3a8a;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e3a8a;
+      color: #e2e8f0;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+
+  <!-- 🌍 AUTO LANGUAGE REDIRECT SYSTEM -->
+  <script>
+    const supported = ["en", "ar", "fr", "es", "ru", "tr", "de", "it", "pt", "zh", "ja", "ko", "el", "hi", "id"];
+
+    const userLang = navigator.language.slice(0,2);
+
+    if (supported.includes(userLang) && userLang !== "en") {
+      window.location.href = `clearbudget-tutorial-${userLang}.html`;
+    }
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <a href="clearbudget-tutorial-ar.html" class="lang-btn">العربية 🇱🇧</a>
+    <h1>ClearBudget – Official Guide</h1>
+    <p>Learn how to use the app step by step</p>
+  </header>
+
+  <div class="container">
+
+    <!-- VIDEO SECTION -->
+    <div class="video-box">
+      <h2>📹 Intro Video</h2>
+
+      <!-- Placeholder – replace with YouTube later -->
+      <div class="video-placeholder">
+        Video will appear here
+      </div>
+
+      <p>You can add a YouTube video link here when ready.</p>
+    </div>
+
+    <!-- PREMIUM -->
+    <h2>⭐ Premium Version</h2>
+    <p>
+      The free version has limits for clients and transactions.  
+      Premium unlocks lifetime access with no ads.  
+      You can upgrade through Google Play, or contact the developer to get a Premium activation code.
+    </p>
+
+    <!-- PERSONAL INFO -->
+    <h2>👤 Personal Information</h2>
+    <p>
+      Add your name, phone, and business details to show them on invoices and statements.  
+      You may leave the fields empty if you prefer not to personalize documents.
+    </p>
+
+    <!-- CURRENCY -->
+    <h2>💱 Currency Settings</h2>
+    <p>
+      Choose your main local currency.  
+      When switching the currency, all “Local” transactions will update automatically.
+    </p>
+
+    <!-- BACKUP -->
+    <h2>☁ Backup & Restore</h2>
+    <p>
+      ClearBudget supports:
+      <br>• Automatic daily backup to Google Drive  
+      <br>• Manual Drive backup  
+      <br>• Manual file export/import  
+      ⚠ Restoring a backup will delete current data and replace it.
+    </p>
+
+    <!-- CLIENTS -->
+    <h2>👥 Clients Page</h2>
+    <p>
+      Press (+) to add a new client.  
+      Long-press a client to edit, delete, or switch between 6 roles  
+      (General / Dollar / Local / Customer / Supplier / etc.).  
+    </p>
+
+    <!-- TRANSACTIONS -->
+    <h2>💵 Transactions</h2>
+    <p>
+      Add payments, receipts, reminders, or notes.  
+      Generate a PDF statement instantly or create invoices & receipts.  
+      All generated documents are saved in the Documents Archive.
+    </p>
+
+    <!-- REPORTS -->
+    <h2>📊 Reports</h2>
+    <p>
+      View Top Debtors, Cash Flow, Best Clients, and Debt Aging charts.  
+      Switch between USD and Local currency anytime.
+    </p>
+
+    <!-- CATEGORIES -->
+    <h2>🏷 Categories</h2>
+    <p>
+      See grouped client statistics with totals for each category.  
+      Tap any category to see all clients and their balances.
+    </p>
+
+    <!-- REMINDERS -->
+    <h2>🔔 Reminders</h2>
+    <p>
+      Create reminders to follow up with clients.  
+      You can call or WhatsApp them directly from the reminder card.
+    </p>
+
+  </div>
+
+  <footer>
+    © 2025 ClearBudget – Bezef Programmation
+  </footer>
+
+</body>
+</html>
