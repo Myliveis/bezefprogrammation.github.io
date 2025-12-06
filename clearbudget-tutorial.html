@@ -56,6 +56,36 @@
         color:#444;
     }
 </style>
+<script>
+  // Supported Languages
+  const supportedLanguages = {
+    "ar": "clearbudget-tutorial-ar.html",     // Arabic
+    "fr": "clearbudget-tutorial-fr.html",     // French
+    "de": "clearbudget-tutorial-de.html",     // German
+    "es": "clearbudget-tutorial-es.html",     // Spanish
+    "it": "clearbudget-tutorial-it.html",     // Italian
+    "pt": "clearbudget-tutorial-pt.html",     // Portuguese
+    "tr": "clearbudget-tutorial-tr.html",     // Turkish
+    "ru": "clearbudget-tutorial-ru.html",     // Russian
+    "el": "clearbudget-tutorial-el.html",     // Greek
+    "hi": "clearbudget-tutorial-hi.html",     // Hindi
+    "id": "clearbudget-tutorial-id.html",     // Indonesian
+    "ja": "clearbudget-tutorial-ja.html",     // Japanese
+    "ko": "clearbudget-tutorial-ko.html",     // Korean
+    "zh": "clearbudget-tutorial-zh.html"      // Chinese
+  };
+
+  // Detect user language
+  const userLang = navigator.language.toLowerCase().split("-")[0];
+
+  // If browser language is supported → Redirect
+  if (supportedLanguages[userLang]) {
+    window.location.href = supportedLanguages[userLang];
+  }
+</script>
+
+
+    
 </head>
 
 <body>
