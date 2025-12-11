@@ -1,111 +1,113 @@
 {
-    "latestVersion": "1.4",
-    "messages": {
-        "en": "A new update (1.4) is available! We've added contact import, camera support, and smoother navigation. Please update for the best experience.",
-        "ar": "تحديث جديد (1.4) متوفر! أضفنا استيراد جهات الاتصال، الكاميرا، وتنقل أسرع. يرجى التحديث للحصول على أفضل تجربة.",
-        "fr": "Une nouvelle mise à jour (1.4) est disponible ! Ajout de l'importation de contacts, caméra et navigation fluide. Mettez à jour pour la meilleure expérience.",
-        "de": "Ein neues Update (1.4) ist verfügbar! Wir haben Kontaktimport, Kamera und schnellere Navigation hinzugefügt. Bitte aktualisieren Sie für das beste Erlebnis.",
-        "it": "È disponibile un nuovo aggiornamento (1.4)! Abbiamo aggiunto importazione contatti, fotocamera e navigazione fluida. Aggiorna per la migliore esperienza.",
-        "es": "¡Nueva actualización (1.4) disponible! Añadimos importación de contactos, cámara y navegación fluida. Actualice para la mejor experiencia.",
-        "pt": "Nova atualização (1.4) disponível! Adicionamos importação de contatos, câmera e navegação suave. Atualize para a melhor experiência.",
-        "tr": "Yeni bir güncelleme (1.4) mevcut! Kişi içe aktarma, kamera ve daha akıcı gezinme eklendi. En iyi deneyim için lütfen güncelleyin.",
-        "el": "Μια νέα ενημέρωση (1.4) είναι διαθέσιμη! Προσθέσαμε εισαγωγή επαφών, κάμερα και ομαλή πλοήγηση. Ενημερώστε για την καλύτερη εμπειρία.",
-        "hi": "एक नया अपडेट (1.4) उपलब्ध है! हमने संपर्क आयात, कैमरा और स्मूथ नेविगेशन जोड़ा है। कृपया सर्वोत्तम अनुभव के लिए अपडेट करें।",
-        "zh": "新更新 (1.4) 可用！我们添加了联系人导入、相机支持和更流畅的导航。请更新以获得最佳体验。",
-        "ru": "Доступно новое обновление (1.4)! Добавлен импорт контактов, камера и плавная навигация. Обновите для лучшей работы.",
-        "in": "Pembaruan baru (1.4) tersedia! Kami menambahkan impor kontak, kamera, dan navigasi yang lebih lancar. Harap perbarui untuk pengalaman terbaik.",
-        "ja": "新しいアップデート（1.4）が利用可能です！連絡先のインポート、カメラ、スムーズなナビゲーションを追加しました。最高の体験のために更新してください。",
-        "ko": "새로운 업데이트(1.4)를 사용할 수 있습니다! 연락처 가져오기, 카메라 및 부드러운 탐색 기능이 추가되었습니다. 최고의 경험을 위해 업데이트하십시오.",
+  "latestVersion": "1.5",
+  "url": "https://play.google.com/store/apps/details?id=com.bezef.clearbudget",
+  "storeUrl": "https://play.google.com/store/apps/details?id=com.bezef.clearbudget",
+  "messages": {
+    "en": "Update 1.5 is available! We've added 'Unit' support (Kg, Pcs...), Smart Auto-complete for items, and fixed language switching. Please update for the best experience.",
+    "ar": "تحديث 1.5 متوفر! أضفنا خانة 'الوحدة' (كغ، قطعة...)، وميزة الإكمال التلقائي الذكي للأصناف، وأصلحنا تبديل اللغات. يرجى التحديث للحصول على أفضل تجربة.",
+    "fr": "Mise à jour 1.5 disponible ! Ajout du champ 'Unité' (Kg, Pc...), saisie semi-automatique intelligente et correction des langues.",
+    "de": "Update 1.5 verfügbar! Mit Feld 'Einheit' (kg, Stk...), intelligenter Autovervollständigung und Sprachkorrekturen.",
+    "it": "Aggiornamento 1.5 disponibile! Con campo 'Unità' (Kg, Pz...), completamento automatico e correzione lingue.",
+    "es": "¡Actualización 1.5 disponible! Con campo 'Unidad' (Kg, Pza...), autocompletado inteligente y corrección de idiomas.",
+    "pt": "Atualização 1.5 disponível! Com campo 'Unidade' (Kg, Pç...), preenchimento automático inteligente e correção de idiomas.",
+    "tr": "Güncelleme 1.5 mevcut! 'Birim' alanı (Kg, Adet...), Akıllı Otomatik Tamamlama ve dil düzeltmeleri ile.",
+    "el": "Ενημέρωση 1.5 διαθέσιμη! Με πεδίο 'Μονάδα' (Kg, Τεμ...), Έξυπνη αυτόματη συμπλήρωση και διορθώσεις γλώσσας.",
+    "hi": "अपडेट 1.5 उपलब्ध है! 'इकाई' फ़ील्ड (किग्रा, नग...), स्मार्ट ऑटो-कम्प्लीट और भाषा सुधार के साथ।",
+    "zh": "更新 1.5 可用！新增“单位”字段、智能自动完成功能和语言切换修复。",
+    "ru": "Обновление 1.5 доступно! Поле 'Единица', умное автозаполнение и исправление языков.",
+    "in": "Pembaruan 1.5 tersedia! Dengan bidang 'Satuan' (Kg, Pcs...), Isi Otomatis Cerdas, dan perbaikan bahasa.",
+    "ja": "アップデート1.5利用可能！「単位」フィールド、スマートオートコンプリート、言語切り替えの修正を追加。",
+    "ko": "업데이트 1.5 사용 가능! '단위' 필드, 스마트 자동 완성 및 언어 전환 수정.",
 
-        "news_en": [
-            "New: Import clients directly from contacts.",
-            "Feature: Camera button to attach photos to transactions.",
-            "Improved: Smooth swipe navigation between pages.",
-            "New App Icon & Bug fixes."
-        ],
-        "news_ar": [
-            "جديد: استيراد العملاء مباشرة من جهات الاتصال.",
-            "ميزة: زر الكاميرا لإرفاق صور مع المعاملات.",
-            "تحسين: تنقل سلس بالسحب (Swipe) بين الصفحات.",
-            "أيقونة جديدة وإصلاحات للأخطاء."
-        ],
-        "news_fr": [
-            "Nouveau : Importer des clients depuis les contacts.",
-            "Fonction : Bouton caméra pour joindre des photos.",
-            "Amélioré : Navigation fluide par glissement entre les pages.",
-            "Nouvelle icône et corrections de bugs."
-        ],
-        "news_de": [
-            "Neu: Kunden direkt aus Kontakten importieren.",
-            "Feature: Kamera-Button zum Anhängen von Fotos.",
-            "Verbessert: Reibungslose Wisch-Navigation.",
-            "Neues App-Icon & Fehlerbehebungen."
-        ],
-        "news_it": [
-            "Novità: Importa clienti dai contatti.",
-            "Funzione: Pulsante fotocamera per allegare foto.",
-            "Migliorato: Navigazione fluida a scorrimento.",
-            "Nuova icona app e correzioni di bug."
-        ],
-        "news_es": [
-            "Nuevo: Importar clientes desde contactos.",
-            "Función: Botón de cámara para adjuntar fotos.",
-            "Mejorado: Navegación fluida por deslizamiento.",
-            "Nuevo icono y corrección de errores."
-        ],
-        "news_pt": [
-            "Novo: Importar clientes dos contatos.",
-            "Recurso: Botão de câmera para anexar fotos.",
-            "Melhorado: Navegação suave por deslizamento.",
-            "Novo ícone e correções de bugs."
-        ],
-        "news_tr": [
-            "Yeni: Müşterileri rehberden içe aktarın.",
-            "Özellik: İşlemlere fotoğraf eklemek için kamera butonu.",
-            "Geliştirilmiş: Sayfalar arası akıcı kaydırma.",
-            "Yeni Uygulama Simgesi ve Hata düzeltmeleri."
-        ],
-        "news_el": [
-            "Νέα: Εισαγωγή πελατών από τις επαφές.",
-            "Λειτουργία: Κουμπί κάμερας για επισύναψη φωτογραφιών.",
-            "Βελτιωμένο: Ομαλή πλοήγηση με σάρωση.",
-            "Νέο εικονίδιο & Διορθώσεις σφαλμάτων."
-        ],
-        "news_hi": [
-            "नया: संपर्कों से सीधे ग्राहकों को आयात करें।",
-            "फ़ीचर: लेनदेन में फोटो जोड़ने के लिए कैमरा बटन।",
-            "बेहतर: पेजों के बीच स्मूथ स्वाइप नेविगेशन।",
-            "नया ऐप आइकन और बग फिक्स।"
-        ],
-        "news_zh": [
-            "新功能：直接从通讯录导入客户。",
-            "功能：用于附加照片的相机按钮。",
-            "改进：页面间流畅的滑动导航。",
-            "新应用图标和错误修复。"
-        ],
-        "news_ru": [
-            "Новое: Импорт клиентов из контактов.",
-            "Функция: Кнопка камеры для фото в транзакциях.",
-            "Улучшено: Плавная навигация свайпом.",
-            "Новая иконка и исправление ошибок."
-        ],
-        "news_in": [
-            "Baru: Impor klien langsung dari kontak.",
-            "Fitur: Tombol kamera untuk melampirkan foto.",
-            "Ditingkatkan: Navigasi geser yang lancar.",
-            "Ikon Aplikasi Baru & Perbaikan bug."
-        ],
-        "news_ja": [
-            "新規：連絡先からクライアントを直接インポート。",
-            "機能：取引に写真を添付するカメラボタン。",
-            "改善：ページ間のスムーズなスワイプナビゲーション。",
-            "新しいアプリアイコンとバグ修正。"
-        ],
-        "news_ko": [
-            "새로운 기능: 연락처에서 직접 고객 가져오기.",
-            "기능: 거래에 사진을 첨부하는 카메라 버튼.",
-            "개선: 페이지 간 부드러운 스와이프 탐색.",
-            "새 앱 아이콘 및 버그 수정."
-        ]
-    }
+    "news_en": [
+      "New: 'Unit' field in invoices (Kg, Pcs, Box...)",
+      "Smart: Auto-complete saves items & units automatically.",
+      "Fixed: Language switching works for all 13 languages.",
+      "Fixed: Total calculation bug & PDF improvements."
+    ],
+    "news_ar": [
+      "جديد: خانة 'الوحدة' في الفواتير (كغ، قطعة، علبة...)",
+      "ذكي: الإكمال التلقائي يحفظ أسماء الأصناف والوحدات.",
+      "إصلاح: تبديل اللغات يعمل الآن بامتياز للجميع.",
+      "إصلاح: خطأ حساب المجموع وتحسينات في ملف PDF."
+    ],
+    "news_fr": [
+      "Nouveau : Champ 'Unité' dans les factures.",
+      "Intelligent : Saisie semi-automatique des articles.",
+      "Corrigé : Le changement de langue fonctionne parfaitement.",
+      "Améliorations PDF et calculs."
+    ],
+    "news_de": [
+      "Neu: Feld 'Einheit' in Rechnungen.",
+      "Smart: Autovervollständigung für Artikel.",
+      "Behoben: Sprachumschaltung funktioniert perfekt.",
+      "PDF-Verbesserungen und Bugfixes."
+    ],
+    "news_it": [
+      "Nuovo: Campo 'Unità' nelle fatture.",
+      "Smart: Completamento automatico articoli.",
+      "Risolto: Cambio lingua funzionante.",
+      "Miglioramenti PDF e calcoli."
+    ],
+    "news_es": [
+      "Nuevo: Campo 'Unidad' en facturas.",
+      "Inteligente: Autocompletado de artículos.",
+      "Arreglado: Cambio de idioma funciona bien.",
+      "Mejoras en PDF y cálculos."
+    ],
+    "news_pt": [
+      "Novo: Campo 'Unidade' nas faturas.",
+      "Inteligente: Preenchimento automático.",
+      "Corrigido: Troca de idioma funciona.",
+      "Melhorias no PDF e cálculos."
+    ],
+    "news_tr": [
+      "Yeni: Faturalarda 'Birim' alanı.",
+      "Akıllı: Öğeler için otomatik tamamlama.",
+      "Düzeltildi: Dil değiştirme sorunu.",
+      "PDF iyileştirmeleri ve hata düzeltmeleri."
+    ],
+    "news_el": [
+      "Νέο: Πεδίο 'Μονάδα' στα τιμολόγια.",
+      "Έξυπνο: Αυτόματη συμπλήρωση ειδών.",
+      "Διορθώθηκε: Η αλλαγή γλώσσας λειτουργεί.",
+      "Βελτιώσεις PDF και υπολογισμών."
+    ],
+    "news_hi": [
+      "नया: चालान में 'इकाई' फ़ील्ड।",
+      "स्मार्ट: आइटम के लिए ऑटो-कम्प्लीट।",
+      "सुधार: भाषा बदलना काम करता है।",
+      "PDF सुधार और बग फिक्स।"
+    ],
+    "news_zh": [
+      "新功能：发票中的“单位”字段。",
+      "智能：项目自动完成。",
+      "已修复：语言切换功能。",
+      "PDF 改进和错误修复。"
+    ],
+    "news_ru": [
+      "Новое: Поле 'Единица' в счетах.",
+      "Умно: Автозаполнение товаров.",
+      "Исправлено: Переключение языков.",
+      "Улучшения PDF и исправления."
+    ],
+    "news_in": [
+      "Baru: Bidang 'Satuan' di faktur.",
+      "Pintar: Isi otomatis untuk item.",
+      "Perbaikan: Penggantian bahasa.",
+      "Peningkatan PDF dan perbaikan bug."
+    ],
+    "news_ja": [
+      "新規：請求書の「単位」フィールド。",
+      "スマート：アイテムのオートコンプリート。",
+      "修正：言語切り替え。",
+      "PDFの改善とバグ修正。"
+    ],
+    "news_ko": [
+      "새로운 기능: 송장의 '단위' 필드.",
+      "스마트: 항목 자동 완성.",
+      "수정됨: 언어 전환.",
+      "PDF 개선 및 버그 수정."
+    ]
+  }
 }
