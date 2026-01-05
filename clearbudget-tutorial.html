@@ -14,7 +14,7 @@
         padding:20px;
         line-height:1.8;
         color:#222;
-        /* إزالة التمرير إذا تم تفعيل الإطار الخارجي */
+        /* لمنع ظهور شريط تمرير مزدوج عند تحميل اللغات الأخرى */
         overflow-x: hidden;
     }
 
@@ -24,32 +24,71 @@
         margin-bottom:25px;
     }
 
-    /* 2. تنسيق الفيديو (يظهر دائماً) */
-    .video-container {
+    /* 2. تنسيق صورة الفيديو (بديل المشغل لتجنب الشاشة السوداء) */
+    .video-thumbnail {
         position: relative;
-        padding-bottom: 56.25%; /* 16:9 ratio */
-        height: 0;
-        overflow: hidden;
-        max-width: 100%;
-        background: #000;
-        border-radius: 10px;
-        margin-bottom: 25px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
-        height: 100%;
-        border: 0;
+        max-width: 100%; /* عرض كامل */
+        height: auto;
+        display: block;
+        margin-bottom: 25px;
+        border-radius: 12px; /* حواف دائرية */
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* ظل جمالي */
+        cursor: pointer;
+        text-decoration: none;
+        background-color: #000;
     }
 
-    /* 3. تنسيق الإطار الخارجي (مخفي افتراضياً) */
+    .video-thumbnail img {
+        width: 100%;
+        height: auto;
+        display: block;
+        opacity: 0.9;
+        transition: 0.3s;
+    }
+    
+    .video-thumbnail:hover img {
+        opacity: 1;
+    }
+
+    /* زر التشغيل الأحمر في الوسط */
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 0, 0, 0.9);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        transition: transform 0.2s;
+    }
+
+    /* رمز المثلث الأبيض داخل الزر */
+    .play-button::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 18px solid white;
+        margin-left: 4px;
+    }
+
+    .video-thumbnail:active .play-button {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+
+    /* 3. تنسيق الإطار الخارجي للغات الأخرى (مخفي افتراضياً) */
     #external-frame {
         width: 100%;
-        height: 100vh; /* طول كامل */
+        height: 100vh;
         border: none;
         display: none; /* مخفي، يظهر فقط إذا كانت اللغة غير الإنجليزية */
     }
@@ -96,9 +135,10 @@
 
     <h1>📘 ClearBudget – Help Center</h1>
 
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/4TPJMk962FY" title="ClearBudget Tutorial" allowfullscreen></iframe>
-    </div>
+    <a href="https://www.youtube.com/watch?v=4TPJMk962FY" target="_blank" class="video-thumbnail">
+        <img src="https://img.youtube.com/vi/4TPJMk962FY/hqdefault.jpg" alt="Watch Tutorial">
+        <div class="play-button"></div>
+    </a>
 
     <iframe id="external-frame" src=""></iframe>
 
@@ -279,7 +319,7 @@
         const englishWrapper = document.getElementById("english-content");
         const externalFrame = document.getElementById("external-frame");
 
-        // الشرط: إذا كانت اللغة مدعومة وليست إنجليزية (لأن الإنجليزية موجودة بالفعل هنا)
+        // الشرط: إذا كانت اللغة مدعومة 
         if (supportedLanguages[userLang]) {
             // 1. إخفاء المحتوى الإنجليزي
             englishWrapper.style.display = "none";
@@ -288,12 +328,11 @@
             externalFrame.style.display = "block";
             externalFrame.src = supportedLanguages[userLang];
             
-            // تعديل ارتفاع الصفحة ليتناسب مع الإطار فقط
-            document.body.style.overflowY = "hidden"; // منع سكرول الصفحة الرئيسية، الاعتماد على الإطار
+            // منع سكرول الصفحة الرئيسية والاعتماد على الإطار فقط لتجربة أفضل
+            document.body.style.overflowY = "hidden"; 
         } 
-        // إذا لم يتحقق الشرط (اللغة إنجليزية أو غير معروفة)، سيبقى الوضع الافتراضي (الفيديو + المحتوى الإنجليزي)
-
-        // 2. كود الأكورديون (يعمل فقط للمحتوى الإنجليزي)
+        
+        // 2. كود الأكورديون (يعمل فقط للمحتوى الإنجليزي الظاهر)
         const acc = document.getElementsByClassName("accordion");
         for (let i = 0; i < acc.length; i++) {
             acc[i].onclick = function () {
