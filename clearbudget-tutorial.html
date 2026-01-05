@@ -6,13 +6,16 @@
 <title>Help Center – ClearBudget</title>
 
 <style>
+    /* 1. تنسيقات الصفحة العامة */
     body {
-        font-family: "Segoe UI", Taaahoma, sans-serif;
+        font-family: "Segoe UI", Tahoma, sans-serif;
         background:#f2f5f8;
         margin:0;
         padding:20px;
         line-height:1.8;
         color:#222;
+        /* إزالة التمرير إذا تم تفعيل الإطار الخارجي */
+        overflow-x: hidden;
     }
 
     h1 {
@@ -21,16 +24,16 @@
         margin-bottom:25px;
     }
 
-    /* كود تنسيق الفيديو ليكون متجاوباً مع جميع الشاشات */
+    /* 2. تنسيق الفيديو (يظهر دائماً) */
     .video-container {
         position: relative;
-        padding-bottom: 56.25%; /* نسبة العرض للارتفاع 16:9 */
+        padding-bottom: 56.25%; /* 16:9 ratio */
         height: 0;
         overflow: hidden;
         max-width: 100%;
         background: #000;
         border-radius: 10px;
-        margin-bottom: 25px; /* مسافة أسفل الفيديو */
+        margin-bottom: 25px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
@@ -43,6 +46,15 @@
         border: 0;
     }
 
+    /* 3. تنسيق الإطار الخارجي (مخفي افتراضياً) */
+    #external-frame {
+        width: 100%;
+        height: 100vh; /* طول كامل */
+        border: none;
+        display: none; /* مخفي، يظهر فقط إذا كانت اللغة غير الإنجليزية */
+    }
+
+    /* 4. تنسيق المحتوى الإنجليزي (الأكورديون) */
     .accordion {
         background:white;
         padding:16px;
@@ -78,211 +90,223 @@
         color:#444;
     }
 </style>
-<script>
-  // Supported Languages
-  const supportedLanguages = {
-    "ar": "clearbudget-tutorial-ar.html",     // Arabic
-    "fr": "clearbudget-tutorial-fr.html",     // French
-    "de": "clearbudget-tutorial-de.html",     // German
-    "es": "clearbudget-tutorial-es.html",     // Spanish
-    "it": "clearbudget-tutorial-it.html",     // Italian
-    "pt": "clearbudget-tutorial-pt.html",     // Portuguese
-    "tr": "clearbudget-tutorial-tr.html",     // Turkish
-    "ru": "clearbudget-tutorial-ru.html",     // Russian
-    "el": "clearbudget-tutorial-el.html",     // Greek
-    "hi": "clearbudget-tutorial-hi.html",     // Hindi
-    "id": "clearbudget-tutorial-id.html",     // Indonesian
-    "ja": "clearbudget-tutorial-ja.html",     // Japanese
-    "ko": "clearbudget-tutorial-ko.html",     // Korean
-    "zh": "clearbudget-tutorial-zh.html"      // Chinese
-  };
-
-  // Detect user language
-  const userLang = navigator.language.toLowerCase().split("-")[0];
-
-  // If browser language is supported → Redirect
-  if (supportedLanguages[userLang]) {
-    window.location.href = supportedLanguages[userLang];
-  }
-</script>
-
-
-    
 </head>
 
 <body>
 
-<h1>📘 ClearBudget – Help Center</h1>
+    <h1>📘 ClearBudget – Help Center</h1>
 
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/4TPJMk962FY" title="ClearBudget Tutorial" allowfullscreen></iframe>
-</div>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/4TPJMk962FY" title="ClearBudget Tutorial" allowfullscreen></iframe>
+    </div>
 
-<div class="accordion">⭐ Premium Version</div>
-<div class="panel">
-<p>
-The free version of ClearBudget has a limited number of clients and transactions.  
-You can keep using it by watching ads or earning points.
+    <iframe id="external-frame" src=""></iframe>
 
-The <b>Premium version</b> gives you:
-<br>• Unlimited clients, transactions, and invoices – for life  
-• All ads removed  
-• Future exclusive features  
-• Priority support  
+    <div id="english-content">
+        
+        <div class="accordion">⭐ Premium Version</div>
+        <div class="panel">
+        <p>
+        The free version of ClearBudget has a limited number of clients and transactions.  
+        You can keep using it by watching ads or earning points.
 
-Payment methods:
-<br>• Through Google Play (if you have a Google account and a payment card)  
-• Or by contacting the developer to pay via: Whish, OMT, cryptocurrencies, and more  
-After direct payment, you receive an activation code to enter inside the app.
-</p>
-</div>
+        The <b>Premium version</b> gives you:
+        <br>• Unlimited clients, transactions, and invoices – for life  
+        <br>• All ads removed  
+        <br>• Future exclusive features  
+        <br>• Priority support  
 
-<div class="accordion">👤 Personal Information Page</div>
-<div class="panel">
-<p>
-This page allows you to personalize your reports and invoices with your name, signature, and company logo.  
-You may edit any information at any time and press (Save).
+        Payment methods:
+        <br>• Through Google Play (if you have a Google account and a payment card)  
+        <br>• Or by contacting the developer to pay via: Whish, OMT, cryptocurrencies, and more  
+        After direct payment, you receive an activation code to enter inside the app.
+        </p>
+        </div>
 
-All your data stays on your device only and is never sent anywhere.  
-You may also leave the fields empty if you do not wish to display any identity on your invoices.
-</p>
-</div>
+        <div class="accordion">👤 Personal Information Page</div>
+        <div class="panel">
+        <p>
+        This page allows you to personalize your reports and invoices with your name, signature, and company logo.  
+        You may edit any information at any time and press (Save).
 
-<div class="accordion">💱 Currency Settings</div>
-<div class="panel">
-<p>
-Select the currency you want to work with inside the app  
-(USD – EUR – GBP – LBP – or your local currency).
+        All your data stays on your device only and is never sent anywhere.  
+        You may also leave the fields empty if you do not wish to display any identity on your invoices.
+        </p>
+        </div>
 
-When you change the currency, the app automatically converts all previous transactions to the new currency.  
-You may switch anytime, and reports are updated instantly.
-</p>
-</div>
+        <div class="accordion">💱 Currency Settings</div>
+        <div class="panel">
+        <p>
+        Select the currency you want to work with inside the app  
+        (USD – EUR – GBP – LBP – or your local currency).
 
-<div class="accordion">☁️ Backup & Restore</div>
-<div class="panel">
-<p>
-ClearBudget provides two backup methods:
+        When you change the currency, the app automatically converts all previous transactions to the new currency.  
+        You may switch anytime, and reports are updated instantly.
+        </p>
+        </div>
 
-<b>1) Google Drive Backup:</b>  
-• Requires Google Login  
-• Daily automatic backup  
-• Manual (instant) backup  
-• Restore the latest cloud backup with one tap  
+        <div class="accordion">☁️ Backup & Restore</div>
+        <div class="panel">
+        <p>
+        ClearBudget provides two backup methods:
 
-<b>2) Manual Backup (ZIP file):</b>  
-• Export your data anywhere: phone, WhatsApp, email, or any cloud storage  
-• Restore any file you choose  
-⚠️ Note: restoring will delete your current data and replace it with the selected backup.
-</p>
-</div>
+        <b>1) Google Drive Backup:</b>  
+        • Requires Google Login  
+        • Daily automatic backup  
+        • Manual (instant) backup  
+        • Restore the latest cloud backup with one tap  
 
-<div class="accordion">👥 Clients Page</div>
-<div class="panel">
-<p>
-Tap (+) to add a new client.  
-You may add a name and phone number — the number is optional but useful for calling or sending messages.
+        <b>2) Manual Backup (ZIP file):</b>  
+        • Export your data anywhere: phone, WhatsApp, email, or any cloud storage  
+        • Restore any file you choose  
+        ⚠️ Note: restoring will delete your current data and replace it with the selected backup.
+        </p>
+        </div>
 
-Long-press on a client to edit, delete, or change their type among:
-<br>• General – General (Local)  
-• Client (USD) – Client (Local)  
-• Supplier (USD) – Supplier (Local)  
+        <div class="accordion">👥 Clients Page</div>
+        <div class="panel">
+        <p>
+        Tap (+) to add a new client.  
+        You may add a name and phone number — the number is optional but useful for calling or sending messages.
 
-Each client’s balance is calculated automatically from their transactions.
-</p>
-</div>
+        Long-press on a client to edit, delete, or change their type among:
+        <br>• General – General (Local)  
+        <br>• Client (USD) – Client (Local)  
+        <br>• Supplier (USD) – Supplier (Local)  
 
-<div class="accordion">💼 Transactions Page</div>
-<div class="panel">
-<p>
-Record any operation here: payment, receipt, debt, purchase, or sale.
+        Each client’s balance is calculated automatically from their transactions.
+        </p>
+        </div>
 
-Extra features:
-<br>• PDF button to generate a ready account statement for WhatsApp sharing  
-• Invoice button to create an invoice or payment receipt  
-• All generated documents are automatically saved in the Documents Archive page  
-</p>
-</div>
+        <div class="accordion">💼 Transactions Page</div>
+        <div class="panel">
+        <p>
+        Record any operation here: payment, receipt, debt, purchase, or sale.
 
-<div class="accordion">📂 Categories</div>
-<div class="panel">
-<p>
-View detailed statistics by type of client:  
-Clients – Suppliers – General – Local – USD.
+        Extra features:
+        <br>• PDF button to generate a ready account statement for WhatsApp sharing  
+        <br>• Invoice button to create an invoice or payment receipt  
+        <br>• All generated documents are automatically saved in the Documents Archive page  
+        </p>
+        </div>
 
-You can see:
-• Amounts you are owed  
-• Amounts you owe  
-• Based on the selected currency (USD – Local)  
-</p>
-</div>
+        <div class="accordion">📂 Categories</div>
+        <div class="panel">
+        <p>
+        View detailed statistics by type of client:  
+        Clients – Suppliers – General – Local – USD.
 
-<div class="accordion">📊 Reports</div>
-<div class="panel">
-<p>
-A powerful page for analyzing your business:
+        You can see:
+        • Amounts you are owed  
+        • Amounts you owe  
+        • Based on the selected currency (USD – Local)  
+        </p>
+        </div>
 
-• Top debtors  
-• Best clients  
-• Aging of debts (old – recent)  
-• Cash flow for every month  
+        <div class="accordion">📊 Reports</div>
+        <div class="panel">
+        <p>
+        A powerful page for analyzing your business:
 
-You may easily switch currencies and browse monthly data instantly.
-</p>
-</div>
+        • Top debtors  
+        • Best clients  
+        • Aging of debts (old – recent)  
+        • Cash flow for every month  
 
-<div class="accordion">🧾 Documents & Invoices</div>
-<div class="panel">
-<p>
-This page contains all documents you created:
-• Invoices  
-• Payment receipts  
-• PDF account statements  
+        You may easily switch currencies and browse monthly data instantly.
+        </p>
+        </div>
 
-You can reopen any document, share it, or delete it.
-</p>
-</div>
+        <div class="accordion">🧾 Documents & Invoices</div>
+        <div class="panel">
+        <p>
+        This page contains all documents you created:
+        • Invoices  
+        • Payment receipts  
+        • PDF account statements  
 
-<div class="accordion">⏰ Reminders</div>
-<div class="panel">
-<p>
-Create reminders linked to any client:
+        You can reopen any document, share it, or delete it.
+        </p>
+        </div>
 
-• Payment reminders  
-• Follow-up notes  
-• Due dates  
-• Client-specific comments  
+        <div class="accordion">⏰ Reminders</div>
+        <div class="panel">
+        <p>
+        Create reminders linked to any client:
 
-You can call or send WhatsApp messages directly from the reminder card.
-</p>
-</div>
+        • Payment reminders  
+        • Follow-up notes  
+        • Due dates  
+        • Client-specific comments  
 
-<div class="accordion">🔒 Security</div>
-<div class="panel">
-<p>
-Protect your data by enabling PIN lock or fingerprint.
+        You can call or send WhatsApp messages directly from the reminder card.
+        </p>
+        </div>
 
-Extra options:
-<br>• Change your PIN  
-• Regain access via fingerprint or smart recovery  
-• Emergency recovery code  
-</p>
-</div>
+        <div class="accordion">🔒 Security</div>
+        <div class="panel">
+        <p>
+        Protect your data by enabling PIN lock or fingerprint.
 
-<script>
-    const acc = document.getElementsByClassName("accordion");
-    for (let i = 0; i < acc.length; i++) {
-        acc[i].onclick = function () {
-            this.classList.toggle("active");
-            const panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
+        Extra options:
+        <br>• Change your PIN  
+        <br>• Regain access via fingerprint or smart recovery  
+        <br>• Emergency recovery code  
+        </p>
+        </div>
+    </div> <script>
+        // 1. منطق تحويل اللغة
+        const supportedLanguages = {
+            "ar": "clearbudget-tutorial-ar.html",
+            "fr": "clearbudget-tutorial-fr.html",
+            "de": "clearbudget-tutorial-de.html",
+            "es": "clearbudget-tutorial-es.html",
+            "it": "clearbudget-tutorial-it.html",
+            "pt": "clearbudget-tutorial-pt.html",
+            "tr": "clearbudget-tutorial-tr.html",
+            "ru": "clearbudget-tutorial-ru.html",
+            "el": "clearbudget-tutorial-el.html",
+            "hi": "clearbudget-tutorial-hi.html",
+            "id": "clearbudget-tutorial-id.html",
+            "ja": "clearbudget-tutorial-ja.html",
+            "ko": "clearbudget-tutorial-ko.html",
+            "zh": "clearbudget-tutorial-zh.html"
         };
-    }
-</script>
+
+        const userLang = navigator.language.toLowerCase().split("-")[0];
+        
+        // العناصر في الصفحة
+        const englishWrapper = document.getElementById("english-content");
+        const externalFrame = document.getElementById("external-frame");
+
+        // الشرط: إذا كانت اللغة مدعومة وليست إنجليزية (لأن الإنجليزية موجودة بالفعل هنا)
+        if (supportedLanguages[userLang]) {
+            // 1. إخفاء المحتوى الإنجليزي
+            englishWrapper.style.display = "none";
+            
+            // 2. إظهار الإطار وتحميل الصفحة المناسبة
+            externalFrame.style.display = "block";
+            externalFrame.src = supportedLanguages[userLang];
+            
+            // تعديل ارتفاع الصفحة ليتناسب مع الإطار فقط
+            document.body.style.overflowY = "hidden"; // منع سكرول الصفحة الرئيسية، الاعتماد على الإطار
+        } 
+        // إذا لم يتحقق الشرط (اللغة إنجليزية أو غير معروفة)، سيبقى الوضع الافتراضي (الفيديو + المحتوى الإنجليزي)
+
+        // 2. كود الأكورديون (يعمل فقط للمحتوى الإنجليزي)
+        const acc = document.getElementsByClassName("accordion");
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].onclick = function () {
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            };
+        }
+    </script>
 
 </body>
 </html>
