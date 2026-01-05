@@ -7,7 +7,7 @@
 
 <style>
     body {
-        font-family: "Segoe UI", Tahoma, sans-serif;
+        font-family: "Segoe UI", Taaahoma, sans-serif;
         background:#f2f5f8;
         margin:0;
         padding:20px;
@@ -19,6 +19,28 @@
         text-align:center;
         color:#1e40af;
         margin-bottom:25px;
+    }
+
+    /* كود تنسيق الفيديو ليكون متجاوباً مع جميع الشاشات */
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* نسبة العرض للارتفاع 16:9 */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        border-radius: 10px;
+        margin-bottom: 25px; /* مسافة أسفل الفيديو */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
     }
 
     .accordion {
@@ -92,7 +114,10 @@
 
 <h1>📘 ClearBudget – Help Center</h1>
 
-<!-- 1. PREMIUM -->
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/4TPJMk962FY" title="ClearBudget Tutorial" allowfullscreen></iframe>
+</div>
+
 <div class="accordion">⭐ Premium Version</div>
 <div class="panel">
 <p>
@@ -112,7 +137,6 @@ After direct payment, you receive an activation code to enter inside the app.
 </p>
 </div>
 
-<!-- 2. PERSONAL INFO -->
 <div class="accordion">👤 Personal Information Page</div>
 <div class="panel">
 <p>
@@ -124,7 +148,6 @@ You may also leave the fields empty if you do not wish to display any identity o
 </p>
 </div>
 
-<!-- 3. CURRENCY SETTINGS -->
 <div class="accordion">💱 Currency Settings</div>
 <div class="panel">
 <p>
@@ -136,7 +159,6 @@ You may switch anytime, and reports are updated instantly.
 </p>
 </div>
 
-<!-- 4. BACKUP -->
 <div class="accordion">☁️ Backup & Restore</div>
 <div class="panel">
 <p>
@@ -155,7 +177,6 @@ ClearBudget provides two backup methods:
 </p>
 </div>
 
-<!-- 5. CLIENTS PAGE -->
 <div class="accordion">👥 Clients Page</div>
 <div class="panel">
 <p>
@@ -171,7 +192,6 @@ Each client’s balance is calculated automatically from their transactions.
 </p>
 </div>
 
-<!-- 6. TRANSACTIONS PAGE -->
 <div class="accordion">💼 Transactions Page</div>
 <div class="panel">
 <p>
@@ -184,7 +204,6 @@ Extra features:
 </p>
 </div>
 
-<!-- 7. CATEGORIES -->
 <div class="accordion">📂 Categories</div>
 <div class="panel">
 <p>
@@ -198,7 +217,6 @@ You can see:
 </p>
 </div>
 
-<!-- 8. REPORTS -->
 <div class="accordion">📊 Reports</div>
 <div class="panel">
 <p>
@@ -213,7 +231,6 @@ You may easily switch currencies and browse monthly data instantly.
 </p>
 </div>
 
-<!-- 9. DOCUMENTS -->
 <div class="accordion">🧾 Documents & Invoices</div>
 <div class="panel">
 <p>
@@ -226,7 +243,6 @@ You can reopen any document, share it, or delete it.
 </p>
 </div>
 
-<!-- 10. REMINDERS -->
 <div class="accordion">⏰ Reminders</div>
 <div class="panel">
 <p>
@@ -241,7 +257,6 @@ You can call or send WhatsApp messages directly from the reminder card.
 </p>
 </div>
 
-<!-- 11. SECURITY -->
 <div class="accordion">🔒 Security</div>
 <div class="panel">
 <p>
